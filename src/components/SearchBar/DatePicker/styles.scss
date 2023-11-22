@@ -1,0 +1,57 @@
+.datepicker {
+    width: 215.5px;
+    height: 50px;
+    background: var(--additional-primary, #3f475aa1);
+    display: inline-flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-left: 1px;
+
+    padding: 0px 24px;
+
+    &:hover {
+        outline: 0.1px solid rgb(82, 103, 128);
+
+        & label {
+            color: rgb(224, 222, 222);
+        }
+    }
+
+    label {
+        color: var(--text-secondary, #818d90);
+        font-family: Lato;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+        letter-spacing: 0.32px;
+    }
+
+    .datepicker-icon {
+        display: none;
+    }
+
+    @media screen and (min-width: 1024px) and (max-width: 1200px) {
+        width: 218px;
+    }
+
+    @media (max-width: 1024px) {
+        width: 120px;
+        height: 40px;
+
+        padding: 0px 25px;
+
+        .datepicker-icon {
+            display: block;
+        }
+
+        label {
+            display: none;
+        }
+    }
+
+    @media (max-width: 768px) {
+        width: 100%;
+        margin-left: 0;
+    }
+}

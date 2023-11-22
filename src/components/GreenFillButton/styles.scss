@@ -1,0 +1,43 @@
+.green-fill-btn {
+    width: 183px;
+    height: 50px;
+    margin: 0px 24px;
+
+    border: 0;
+    border-radius: 16px 0px;
+    background: var(--main-accent, #D0FD3E);
+
+    color: var(--text-on-brand, #1A1A1A);
+    font-family: Lato;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    letter-spacing: 0.32px;
+
+    &:hover {
+        background:  #8db40c;
+        cursor: pointer;
+    }
+
+    @media screen and (min-width: 1200px) and (max-width: 1440px) {
+        width: 170px;
+    }
+
+    @media screen and (min-width: 1024px) and (max-width: 1200px) {
+        width: 150px;
+    }
+
+    @media (max-width: 1024px) {
+        width: 120px;
+        height: 40px;
+        font-size: 14px;
+    }
+
+    @media (max-width: 768px) {
+        width: 100%;
+        margin-left: 0;
+        
+        border-radius: 0px 0px 0px 0px;
+    }
+}
