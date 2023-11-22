@@ -1,0 +1,62 @@
+.search-bar {
+    background: url('../../assets/imgs/bg-searchbar.png');
+    background-size: cover;
+    
+    height: 193px;
+    padding: 42px 100px;
+    margin: auto;
+
+    h2 {
+        color: #FFF;
+        font-family: Lato;
+        font-size: 24px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 34px; /* 141.667% */
+        letter-spacing: 0.48px;
+        margin: 0;
+        width: fit-content;
+    }
+
+    .search-items {
+        width: fit-content;
+        display: flex;
+        margin-top: 24px;
+    }
+
+    @media screen and (min-width: 1440px) {
+        width: 1440px;
+    }
+
+    @media screen and (min-width: 1200px) and (max-width: 1440px) {
+        width: 1200px;
+    }
+
+    @media screen and (min-width: 1024px) and (max-width: 1200px) {
+        width: 1024px;
+
+        h2 {
+            font-size: 18px;
+        }
+    }
+
+    @media screen and (min-width: 768px) and (max-width: 1024px) {
+        width: 768px;
+    }
+    
+    @media (max-width: 768px) {
+        padding: 21px 50px;
+        height: fit-content;
+
+        h2 {
+            font-size: 16px;
+            line-height: 26px;
+        }
+
+        .search-items {
+            width: 100%;
+            flex-direction: column;
+            gap: 5px;
+        }
+    }
+} 
