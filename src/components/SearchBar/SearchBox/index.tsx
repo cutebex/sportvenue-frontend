@@ -1,6 +1,5 @@
 import React, { useState, useRef, useEffect, KeyboardEvent, MouseEvent }  from 'react'
 import './styles.scss'
-import SuggestionList from '../SuggestionList';
 
 interface IAutocompleteProps {
   // The function to fetch suggestions from the server
@@ -75,15 +74,13 @@ const SearchBox : React.FC<IAutocompleteProps> = ({fetchSuggestions , placeholde
             <li
               key={index}
               className={index === selectedSuggestionIndex ? 'selected' : ''}
-              onClick={() => handleSuggestionClick(index)}
-            >
+              onClick={() => handleSuggestionClick(index)}>
               <label htmlFor='searchbox'>{suggestion}</label>
             </li>
           ))}
         </ul>
       )}
 
-      {/* <SuggestionList /> */}
     </div>
   )
 }
