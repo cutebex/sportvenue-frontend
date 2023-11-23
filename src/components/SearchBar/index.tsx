@@ -19,7 +19,7 @@ const fetchSuggestions = async (inputValue: string): Promise<string[]> => {
 
   if(inputValue != "") {
       try {
-        const response = await fetch(`http://localhost:8080/api/v1/venue/${inputValue}`);
+        const response = await fetch(`${process.env.REACT_APP_BACKEND_API}/api/v1/venue/${inputValue}`);
         const data = await response.json();
         if(data != null)
           venueTypes = data.map((item : DataItem) => item.Type);
