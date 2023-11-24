@@ -14,6 +14,9 @@
 
 - Clone this project to your local machine `https://github.com/cutebex/sportvenue-react.git`
 
+### Environment
+Node v16.20.2
+
 ### Setup
   > In the root directory, run the command
   ```shell
@@ -28,3 +31,5 @@
 
 
   - Use `http://localhost:3000` as base url for endpoints
+
+Note: Please copy .env.sample file and rename as .env. And then edit properly.
